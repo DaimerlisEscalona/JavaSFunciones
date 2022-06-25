@@ -1,4 +1,4 @@
-var selectColor;
+let selectColor;
 let aNaranja = document.getElementById('aColorNaranja');
 let sAzul = document.getElementById('sColorAzul');
 let dRojo = document.getElementById('dColorRojo');
@@ -7,15 +7,15 @@ let verde = document.getElementById('colorVerde');
 
 
 document.addEventListener('keydown', function (event) {
-    if (event.key === 'a') {
+    
+    if (event.key === 'a' || event.key === 'A') {
         selectColor = 'rgba(255, 166, 0, 0.788)';
-    } else if (event.key === 's') {
+    } else if (event.key === 's' || event.key === 'S') {
         selectColor = 'rgb(55, 55, 185)';
-     
-    } else if (event.key == 'd') {
+    } else if (event.key == 'd' || event.key === 'D') {
         selectColor = 'rgb(250, 59, 59)';
-        console.log(selectColor);
-
+    } else{
+        selectColor = 'rgb(104, 233, 104)';
     }
 })
 

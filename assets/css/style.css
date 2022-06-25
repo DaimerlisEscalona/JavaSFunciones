@@ -1,29 +1,40 @@
 .cont-general{
 
     display: grid;
-    grid-template-areas: "cont-suma-tres-num cont-suma-dos-num";
-    grid-area: 40% 30%;
+    grid-template-areas: "cont-tit" "cont-suma-tres-num" "cont-suma-dos-num" "cont-pintar" "cont-web";
+    grid-area: 50% 50% 50%;
     background-color: rgb(241, 250, 250);
 }
+
+.cont-tit{
+
+    grid-area: cont-tit;
+    background-color: rgb(145, 243, 243);
+    text-align: center;
+}
+
 .cont-suma-tres-num{
 
     grid-template-areas: cont-suma-tres-num;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh;
+    margin: 10vh 2vh 0 2vh;
+    border: 1px dotted green;
 
 }
 
 .cont-datos{
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-areas: "cont-num-uno cont-num-dos cont-num-tres" ;
+    grid-area: 30% 30% 30%;
+
 }
 
 .cont-num-uno{
 
+    grid-area: cont-num-uno;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,36 +43,51 @@
 
 .cont-num-dos{
 
+    grid-area: cont-num-dos;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 2vh 0 2vh;
+
 
 }
 
 .cont-num-tres{
 
+    grid-area: cont-num-tres;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 
 }
 
 .form-lab-tex{
 
-    font-size: medium;
+    font-size: small;
     margin: 0 0 1vh 0;
+    width: 90%;
+    text-align: center;
+
+}
+
+.form-inp{
+
+    font-size: small;
+    margin: 0 0 1vh 0;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(200, 255, 225);
 }
 
 .form-but{
 
-    width: 18vh;
+    width: 20vh;
 	cursor: pointer;
     margin: 3vh 0 3vh 0;
   	height: 6vh;
   	outline: 0; 
   	border-radius: 1vh;
-	background-color: rgb(77, 238, 149);
+	background-color: rgb(145, 243, 243);
 	font-size: small;
 	color: 	black;
 
@@ -82,44 +108,209 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh;
+    border: 1px dotted green;
+    margin: 10vh 2vh 0 2vh;
+  
+}
+
+.cont-pintar{
+
+    grid-template-areas: cont-pintar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dotted green;
+    margin: 10vh 2vh 0 2vh;
+  
+
 }
 
 .fondoParrafo{
 
-    background-color: green;
+    background-color: rgb(49, 189, 49);
     text-align: center;
     padding: 1vh 0 1vh 0;
 }
 
-.cont-div{
+.cont-buton{
 
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.form-div{
+.form-but-pintar{
 
-    width: 200px;
-    height: 200px;
+    width: 50vh;
+	cursor: pointer;
+    margin: 3vh 0 3vh 0;
+  	height: 6vh;
+  	outline: 0; 
+  	border-radius: 1vh;
+	background-color: rgb(145, 243, 243);
+	font-size: small;
+	color: 	black;
+}
+
+.cont-div{
+
+    display: grid;
+    grid-template-areas: "cont-nar" "cont-azul" "cont-rojo" "cont-verde";
+    grid-area: 30% 30% 30% 30%;
+}
+
+.cont-nar{
+
+    grid-area: cont-nar;
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #aColorNaranja{
 
     background-color: rgba(255, 166, 0, 0.788);
+    width: 200px;
+    height: 200px;
+    margin: 2vh;
+}
+
+.cont-azul{
+
+    grid-area: cont-azul;
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #sColorAzul{
 
     background-color: rgb(55, 55, 185);
+    width: 200px;
+    height: 200px;
+    margin: 2vh;
+}
+
+.cont-rojo{
+
+    grid-area: cont-rojo;
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #dColorRojo{
 
     background-color: rgb(250, 59, 59);
+    width: 200px;
+    height: 200px;
+    margin: 2vh;
+}
+
+.cont-verde{
+
+    grid-area: cont-verde;
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #colorVerde{
 
     background-color: rgb(104, 233, 104);
+    width: 200px;
+    height: 200px;
+    margin: 2vh;
+}
+
+.cont-web{
+
+    grid-template-areas: cont-web;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dotted green;
+    margin: 10vh 2vh 10vh 2vh;
+  
+}
+
+@media(min-width: 993px){
+
+    .cont-general{
+
+        display: grid;
+        grid-template-areas: "cont-tit cont-tit" "cont-suma-tres-num cont-suma-dos-num" 
+        "cont-pintar cont-pintar" "cont-web cont-web";
+        grid-area: 50% 50% 50% 50%;
+
+    }
+    
+    .cont-tit{
+    
+        grid-area: cont-tit;
+
+    }
+    
+    .cont-suma-tres-num{
+    
+        grid-template-areas: cont-suma-tres-num;
+        border: none;
+    
+    }
+    
+    .cont-suma-dos-num{
+    
+        grid-template-areas: cont-suma-dos-num;
+        border: none;
+      
+    }
+    
+    .cont-pintar{
+    
+        grid-template-areas: cont-pintar;
+        border: none;
+    
+    }
+    
+    .cont-div{
+    
+        display: grid;
+        grid-template-areas: "cont-nar cont-azul" "cont-rojo cont-verde";
+        grid-area: 50% 50%;
+    }
+    
+    .cont-nar{
+    
+        grid-area: cont-nar;
+
+    }
+
+    .cont-azul{
+    
+        grid-area: cont-azul;
+
+    }
+    
+    .cont-rojo{
+    
+        grid-area: cont-rojo;
+
+    }
+    
+    .cont-verde{
+    
+        grid-area: cont-verde;
+        
+    }
+    
+    .cont-web{
+    
+        grid-template-areas: cont-web;
+        border: none;
+    }
 }
