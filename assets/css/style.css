@@ -1,0 +1,125 @@
+.cont-general{
+
+    display: grid;
+    grid-template-areas: "cont-suma-tres-num cont-suma-dos-num";
+    grid-area: 40% 30%;
+    background-color: rgb(241, 250, 250);
+}
+.cont-suma-tres-num{
+
+    grid-template-areas: cont-suma-tres-num;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh;
+
+}
+
+.cont-datos{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-num-uno{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cont-num-dos{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2vh 0 2vh;
+
+}
+
+.cont-num-tres{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-lab-tex{
+
+    font-size: medium;
+    margin: 0 0 1vh 0;
+}
+
+.form-but{
+
+    width: 18vh;
+	cursor: pointer;
+    margin: 3vh 0 3vh 0;
+  	height: 6vh;
+  	outline: 0; 
+  	border-radius: 1vh;
+	background-color: rgb(77, 238, 149);
+	font-size: small;
+	color: 	black;
+
+}
+
+.form-lab{
+
+    height: 8vh;
+  	border-radius: 1vh;
+	font-size: medium;
+	color: 	rgb(8, 68, 8);
+
+}
+
+.cont-suma-dos-num{
+
+    grid-template-areas: cont-suma-dos-num;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh;
+}
+
+.fondoParrafo{
+
+    background-color: green;
+    text-align: center;
+    padding: 1vh 0 1vh 0;
+}
+
+.cont-div{
+
+    display: flex;
+    justify-content:space-around;
+}
+
+.form-div{
+
+    width: 200px;
+    height: 200px;
+}
+
+#aColorNaranja{
+
+    background-color: rgba(255, 166, 0, 0.788);
+}
+
+#sColorAzul{
+
+    background-color: rgb(55, 55, 185);
+}
+
+#dColorRojo{
+
+    background-color: rgb(250, 59, 59);
+}
+
+#colorVerde{
+
+    background-color: rgb(104, 233, 104);
+}
