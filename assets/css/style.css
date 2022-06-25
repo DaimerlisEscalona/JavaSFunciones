@@ -239,6 +239,13 @@
   
 }
 
+.form-img{
+
+    width: 50vh;
+    height: 50vh;
+    
+}
+
 @media(min-width: 993px){
 
     .cont-general{
